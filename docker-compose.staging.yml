@@ -1,0 +1,9 @@
+services:
+  backend-staging:
+    image: ghcr.io/qsrn232-tech/backend_testing:staging
+    container_name: backend-staging
+    restart: always
+    ports:
+      - "3222:3000"
+    environment:
+      - NODE_ENV=staging

@@ -1,0 +1,9 @@
+services:
+  backend-prod:
+    image: ghcr.io/qsrn232-tech/backend_testing:latest
+    container_name: backend-prod
+    restart: always
+    ports:
+      - "3223:3000"
+    environment:
+      - NODE_ENV=production
